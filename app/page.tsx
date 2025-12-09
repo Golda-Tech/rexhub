@@ -19,9 +19,19 @@ export default function Home() {
             Rex<span className="text-red-600">Hub</span>
           </h1>
 
-          {/* Animated loader */}
-          <div className="mx-auto mb-8 h-12 w-12 animate-spin rounded-full border-4 border-zinc-300 border-t-red-600"></div>
-
+        {/* Modern launch indicator */}
+        <div className="mx-auto mb-8 h-16 w-16 relative">
+          {/* rotating ring */}
+          <div className="absolute inset-0 rounded-full border-4 border-zinc-200">
+            <div
+              className="absolute inset-0 rounded-full border-4 border-transparent border-t-red-600
+                          animate-spin"
+            ></div>
+          </div>
+          {/* inner glow pulse */}
+          <div className="absolute inset-2 rounded-full bg-gradient-to-tr from-red-500 to-amber-400
+                          animate-pulse scale-90 shadow-lg shadow-red-500/30"></div>
+        </div>
           {/* Tagline */}
           <p className="mb-6 text-2xl font-medium text-zinc-700 sm:text-3xl lg:text-4xl">
             A smarter, faster way to manage

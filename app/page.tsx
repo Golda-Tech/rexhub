@@ -1,6 +1,11 @@
+"use client";
+
+import { ThemeToggle } from "./components/theme-toggle";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-50 via-gray-100 to-zinc-200 dark:from-black dark:via-zinc-900 dark:to-zinc-950">
+      <ThemeToggle />
       <main className="relative flex flex-col items-center justify-center px-6 py-20 text-center">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
